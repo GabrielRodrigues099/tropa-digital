@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel - Tropa Digital</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="content">
+        <section class="content__container">
+            <div class="container">
+                <div class="title--container">
+                    <h1 class="title"><a href="#" class="title__link"><img src="./images/title_image.png"
+                                alt="logo Tropa Digital" class="title__image"></a></h1>
+                </div>
+                <div>
+                    <h2 class="subtitle__text">Bem vindo ao <strong>painel</strong></h2>
+                </div>
+                <form method="GET" action="../home.html" class="inputs">
+                    <input class="inputs__input " type="email" required data-input="email"
+                        placeholder="Digite aqui seu email">
+                    <div class="inputs__input--password">
+                        <input class="inputs__input" data-input="password" required type="password"
+                            placeholder="Digite aqui sua senha"
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
+                            title="A senha deve conter de 6 a 12 caracteres, pelo menos uma letra maiúscula, um número e não deve conter símbolos">
+                        <span class="blind"><img data-hide src="./images/blind_eye.png"
+                                alt="ocultar senha e revelar senha"></span>
+                    </div>
+                    <input class="inputs__input input--submit " data-submit type="submit" value="Acessar">
+                </form>
+            </div>
+            <div class="images">
+                <div class="image__programming"><img class="image__programming--position"
+                        src="./images/image_programming.png" alt="pessoa digitando um código html"></div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src="./js/login.js"></script>
+
+</html>
