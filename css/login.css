@@ -1,0 +1,276 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content {
+  font-family: "Advent Pro", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ff6c22;
+  width: 100vw;
+  height: 100vh;
+}
+
+.content__container {
+  width: 857px;
+  height: 512px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.title {
+  margin: 100px 0 15px 84px;
+}
+
+.subtitle__text {
+  margin-left: 59px;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.44);
+}
+
+.subtitle__text strong {
+  color: #ff6c22;
+}
+
+.inputs {
+  width: 100%;
+  margin-left: 59px;
+  margin-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.inputs .inputs__input {
+  margin-bottom: 15px;
+  width: 313px;
+  height: 44px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 2%;
+}
+
+.inputs .inputs__input--password {
+  position: relative;
+}
+
+.inputs .inputs__input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.35);
+  font-size: 12px;
+}
+
+.inputs .inputs__input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.35);
+  font-size: 12px;
+}
+
+.inputs .inputs__input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.35);
+  font-size: 12px;
+}
+
+.inputs .inputs__input::placeholder {
+  color: rgba(0, 0, 0, 0.35);
+  font-size: 12px;
+}
+
+.inputs .blind {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+
+.inputs .blind:hover {
+  cursor: pointer;
+}
+
+.inputs .input--submit {
+  width: 151px;
+  height: 40px;
+  padding: 1%;
+  color: #ffffff;
+  background-color: #2eafb2;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  text-align: center;
+}
+
+.inputs .input--submit:hover {
+  cursor: pointer;
+  color: #2eafb2;
+  background-color: #ffffff;
+  -webkit-box-shadow: 2px 2px 10px 1px black;
+          box-shadow: 2px 2px 10px 1px black;
+}
+
+.images {
+  margin-left: 100px;
+  width: 100%;
+  height: 100%;
+  background: url("../images/image_galaxy.png");
+}
+
+.images .image__programming {
+  position: absolute;
+  bottom: -3px;
+  right: 10px;
+}
+
+.images .image__programming .image__programming--position {
+  width: 90%;
+}
+
+@media screen and (max-width: 992px) {
+  .content__container {
+    width: 100vw;
+    padding: 50px;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .title {
+    margin: 0;
+  }
+  .subtitle {
+    margin: 0;
+  }
+  .inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .inputs .inputs__input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.35);
+    font-size: 16px;
+  }
+  .inputs .inputs__input:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.35);
+    font-size: 16px;
+  }
+  .inputs .inputs__input::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.35);
+    font-size: 16px;
+  }
+  .inputs .inputs__input::placeholder {
+    color: rgba(0, 0, 0, 0.35);
+    font-size: 16px;
+  }
+  .images {
+    display: none;
+  }
+}
+/*# sourceMappingURL=login.css.map */
