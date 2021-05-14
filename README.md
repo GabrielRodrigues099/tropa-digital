@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Boa tarde! estou enviando o link do projeto e irei comentar brevemente o que fiz no projeto além do que foi pedido, gostei muito de realizar este projeto então acabei adicionando algumas coisas.
 Realizei uma validação simples no formulário utilizando RegEx e habilitei o botão de visualização de senha utilizando JS. Além disso tornei os dois layouts responsivos, inserindo um "menu hambúrguer" no dashboard para dispositivos mobile. Também adicionei uma leve sombra nos cards do dashboard quando passa o mouse por cima. 
 Deixei o html, css e JS o mais legível possível seguindo as boas práticas. 
